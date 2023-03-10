@@ -17,7 +17,7 @@ body{
 /* top banner */
 .top-banner {
    background-image: url(./assets/);
-   background-color: #e74694;
+   background-color: #444;
    background-size: 300px;
  }
 .banner-text {
