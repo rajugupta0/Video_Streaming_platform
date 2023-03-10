@@ -11,3 +11,21 @@ videoList.forEach(vid =>{
       document.querySelector('.main-video-container .main-vid-title').innerHTML = title;
    };
 });
+
+
+// comment
+const form = document.querySelector('#comment-form');
+const commentList = document.querySelector('#comment-list');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const name = form.elements.name.value;
+        const comment = form.elements.comment.value;
+
+        const newComment = document.createElement('li');
+        newComment.innerHTML = `<strong>${name}:</strong> ${comment}`;
+        commentList.appendChild(newComment);
+
+        form.reset();
+      });
+      // end 
